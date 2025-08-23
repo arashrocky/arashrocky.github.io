@@ -7,17 +7,17 @@ main:
   - name: Home
     url: '#about'
     weight: 10
-  - name: Research topics
-    url: '#projects'
-    weight: 20
-  - name: Featured publications
-    url: '#featured-publications'
-    weight: 30
-  - name: Posts
-    url: '#posts'
-    weight: 40
-  - name: Other publications
-    url: '#other-publications'
+  # - name: Research topics
+  #   url: '#projects'
+  #   weight: 20
+  # - name: Featured publications
+  #   url: '#featured-publications'
+  #   weight: 30
+  # - name: Posts
+  #   url: '#posts'
+  #   weight: 40
+  - name: publications
+    url: '#publications'
     weight: 50
   # - name: Contact
   #   url: '#contact'

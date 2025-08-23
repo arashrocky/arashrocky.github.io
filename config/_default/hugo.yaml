@@ -3,8 +3,8 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Nicole Paul # Website name
-baseURL: 'https://nicolepaul.io/' # Website URL 
+title: Arash Rocky # Website name
+baseURL: 'https://arashrocky.github.io/' # Website URL 
 
 ############################
 ## LANGUAGE
@@ -36,7 +36,8 @@ cascade:
 
 enableGitInfo: false
 summaryLength: 30
-paginate: 10
+pagination:
+  pagerSize: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>

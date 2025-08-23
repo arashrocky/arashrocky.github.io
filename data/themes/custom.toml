@@ -9,15 +9,15 @@ name = "Custom"
   link = "#5a464c"
   link_hover = "#3e3d3d"
 
-  # Menu
-  menu_primary = "#fefefe"
-  menu_text = "#3e3d3d"
-  menu_text_active = "#3e3d3d"
-  menu_title = "#5a464c"
+  # Menu - BLACK WITH WHITE TEXT
+  menu_primary = "#000000"      # Pure black background
+  menu_text = "#ffffff"         # White text
+  menu_text_active = "#f0f0f0"  # Slightly gray for active items
+  menu_title = "#ffffff"        # White title
 
   # Home sections
   home_section_odd = "#fefefe"
-  home_section_even = "#fefefe"
+  home_section_even = "#d3d3d3"
 
 [dark]
   # Primary
@@ -27,12 +27,14 @@ name = "Custom"
   link = "#f3f6ee"
   link_hover = "#fefefe"
 
-  # Menu
-  menu_primary = "#2b2a2a"
-  menu_text = "#f3f6ee"
-  menu_text_active = "#fefefe"
-  menu_title = "#f3f6ee"
+  # Menu - BLACK WITH WHITE TEXT (SAME FOR DARK MODE)
+  menu_primary = "#000000"      # Pure black
+  menu_text = "#ffffff"         # White text
+  menu_text_active = "#e0e0e0"  # Light gray for active items
+  menu_title = "#ffffff"        # White title
 
   # Home sections
   home_section_odd = "#2b2a2a"
-  home_section_even = "#2b2a2a"
+  home_section_even = "#1a1a1a"
+
+  

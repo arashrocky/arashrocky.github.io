@@ -11,6 +11,7 @@ appearance:
   theme_night: custom
   font: custom
   font_size: M
+  # color: blue
 
 # SEO
 
@@ -19,16 +20,19 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'Hi, I’m Nicole Paul! 👋 I’m currently researching household displacement due to disasters at University College London (UCL). My research is supervised by Prof. Carmine Galasso (UCL) and Prof. Jack Baker (Stanford University).' # TODO
-    twitter: 'nicopurr'
+    description: 'Hi, I’m Arash Rocky! 👋 I’m currently pursuing my research in computer vision at University of Windsor (UoW) under the supervision of Prof. Jonathan Wu).' # TODO
+    twitter: ''
   analytics:
+    enable: false  # Add this line
     google_analytics: ''
+    googleAnalytics: ''  # Add this line
     baidu_tongji: ''
     google_tag_manager: ''
     microsoft_clarity: ''
   verification:
-    google: 'Ct8pKMCcfRW2FJoHg08dlHxkOhl__CvKhL5ri8zw3_Y'
+    google: 'I8B3FMVsTRq00dane3Sx_p0xsOXbjD-8SpK5N87-gso'
     baidu: ''
+# <meta name="google-site-verification" content="I8B3FMVsTRq00dane3Sx_p0xsOXbjD-8SpK5N87-gso" />
 
 # Site header
 
@@ -46,7 +50,7 @@ header:
 
 footer:
   copyright:
-    notice: '© 2023-{year} Nicole Paul. This work is licensed under {license}'
+    notice: '© 2025-{year} Arash Rocky. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -75,7 +79,8 @@ features:
     branch: main
   avatar:
     gravatar: false
-    shape: circle
+    # shape: circle
+    shape: square
   comment:
     provider: ''
     disqus:

@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Nicole Paul
+title: Arash Rocky
 
 # Name pronunciation (optional)
 name_pronunciation: 
 
 # Full name (for SEO)
-first_name: Nicole
-last_name: Paul
+first_name: Arash
+last_name: Rocky
 
 # Status emoji
 status:
@@ -17,12 +17,13 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: PhD Candidate
+role: PhD Candidate @ [CCVDL](https://www.uwindsor.ca/engineering/research/442/centre-computer-vision-and-deep-learning)
+
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: DE|RISC Lab
-    url: https://www.carminegalassoresearch.com/
+  - name: University of Windsor
+    url: https://www.uwindsor.ca/
 
 # Short bio (displayed in user profile at end of posts)
 bio: Researching population displacement in disasters
@@ -74,20 +75,24 @@ skills:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:nicole.paul.22@ucl.ac.uk'
+    link: 'mailto:rocky@uwindsor.ca'
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/nicoleapaul/
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
-    link: https://scholar.google.com/citations?user=YThjGVkAAAAJ&hl=en
+    link: https://www.linkedin.com/in/arashrocky
+  # - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.ca/citations?user=g6TZT0kAAAAJ&hl=en&oi=ao
+  - icon: researchgate
+    icon_pack: fab
+    link: https://www.researchgate.net/profile/Arash-Rocky
+    # label: Follow me on Twitter
   - icon: github
     icon_pack: fab
-    link: https://github.com/nicolepaul
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/nicopurr
-    label: Follow me on Twitter
+    link: https://github.com/arashrocky
+  - icon: cv
+    icon_pack: ai
+    link: /uploads/resume-new.pdf
     display:
       header: false
   # Link to a PDF of your resume/CV.
@@ -101,29 +106,31 @@ social:
 highlight_name: true
 ---
 
-I'm currently researching household displacement due to disasters at University College London (UCL). My background is in structural engineering and I have over nine years of experience quantifying disaster risks. At the Global Earthquake Model (GEM) Foundation, I conducted earthquake risk assessment at the national and regional scales. At Arup, I was focused on the campus and building-specific scales, with an emphasis on modeling recovery after disasters.
+As a Ph.D. Candidate in Computer Vision, I am currently developing autonomous driving systems (ADS) under the guidance of [**Professor Jonathan Wu**](https://www.uwindsor.ca/engineering/electrical/317/dr-jonathan-wu). My work combines advanced research with a passion for solving real-world challenges. I bring a strong foundation in computer vision engineering from my previous role as an Industrial Automation Engineer, where I gained hands-on experience in practical applications. I completed my M.Sc. and B.Sc. degrees under the supervision of Professor [**Karim Ansari-Asl**](https://scholar.google.com/citations?hl=en&user=xlbTBDEAAAAJ&view_op=list_works&sortby=pubdate).
+
+<!-- I'm currently researching household displacement due to disasters at University College London (UCL). My background is in structural engineering and I have over nine years of experience quantifying disaster risks. At the Global Earthquake Model (GEM) Foundation, I conducted earthquake risk assessment at the national and regional scales. At Arup, I was focused on the campus and building-specific scales, with an emphasis on modeling recovery after disasters. -->
 
 <div class="container">
   <div class="row justify-content-between">
     <div class="col">
-      <h3>Experience</h3>
-        <ul class="fa-ul">
-        <li><span class="fa-li"><i class="fas fa-briefcase"></i></span>Global Earthquake Model, 2019-2023</li>
-        <li><span class="portrait-title"><h3>Pavia, Italy</h3></span></li>
-        <li><span class="fa-li"><i class="fas fa-briefcase"></i></span>Arup, Risk and Resilience, 2014-2019</li>
-        <li><span class="portrait-title"><h3>San Francisco, CA, USA</h3></li>
-        </ul>
+      <h3>Interests</h3>
+      <ul>
+        <li>Artificial Intelligence</li>
+        <li>Machine Learning</li>
+        <li>Computer Vision</li>
+        <li>Vision-Language Models</li>
+      </ul>
     </div>
     <div class="col">
       <h3>Education</h3>
-        <ul class="fa-ul">
-        <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span>MSc Structural Engineering, 2015</li>
-        <li><span class="portrait-title"><h3>Stanford University</h3></li>
-        <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span>BSc Civil Engineering, 2013</li>
-        <li><span class="portrait-title"><h3>University of California, Berkeley</h3></li>
-        </ul>
+      <ul>
+        <li>PhD Computer Vision - University of Windsor (Current)</li>
+        <li>MASc Electrical Engineering - Super-Resolution</li>
+        <li>BSc Electronics - EEG Signal Processing</li>
+      </ul>
     </div>
   </div>
 </div>
 
 {style="text-align: justify;"}
+
