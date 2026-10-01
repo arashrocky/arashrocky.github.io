@@ -27,6 +27,14 @@ tags:
  - Segment Anything Model
 featured: true
 
+# The entry links straight to the project page (https://arashrocky.github.io/RIT/); this entry's own page only forwards there
+# (layouts/publication/redirect.html) and is left out of the sitemap.
+external_link: '/RIT/'
+layout: redirect
+redirect_to: '/RIT/'
+sitemap:
+  disable: true
+
 url_pdf: ''
 url_code: ''
 url_dataset: ''

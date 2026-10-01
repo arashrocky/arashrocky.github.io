@@ -1,0 +1,16 @@
+{{- /* A publication whose front matter sets `layout: redirect` and `redirect_to: <url>` gets no page of its own: its URL
+       forwards to <url> at once (used by the RIT entry, whose page is the project page /RIT/). */ -}}
+{{- $to := .Params.redirect_to | default "/" -}}
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang | default "en" }}">
+<head>
+<meta charset="utf-8">
+<title>{{ .Title }}</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{{ $to | absURL }}">
+<meta http-equiv="refresh" content="0; url={{ $to | relURL }}">
+</head>
+<body>
+<p><a href="{{ $to | relURL }}">{{ .Title }}</a></p>
+</body>
+</html>
