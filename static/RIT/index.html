@@ -58,9 +58,9 @@
   <p class="links-note">The paper and arXiv links go live when the preprint is posted. The code will be released here upon acceptance.</p>
 </section>
 
-<figure class="teaser mid">
-  <div class="plate"><a class="zoom" href="static/img/fig_paradigm.svg" title="Open the figure at full size"><img src="static/img/fig_paradigm.svg" width="637" height="236" alt="Frame-level detection gives one score per frame; INC gives a score per agent per frame, so it can say which agent, where, and how early." loading="lazy"></a></div>
-  <figcaption><strong>Frame-level versus object-level incident detection.</strong> (a) The DoTA leaderboard scores one number per frame and answers one question. (b) INC scores every tracked agent at every frame; the frame score is derived from the per-object scores, so the two paradigms are comparable at frame level while only the second reports who, where and how early.</figcaption>
+<figure class="hero-clip">
+  <div class="plate"><video data-clip muted loop playsinline controls preload="metadata" width="960" height="810" poster="static/video/pWZSG2cUdEo_003288.jpg" aria-label="DoTA video pWZSG2cUdEo_003288: every tracked agent&#x27;s box coloured by its per-object score, with the score curves and a cursor at the current frame."><source src="static/video/pWZSG2cUdEo_003288.mp4" type="video/mp4"></video></div>
+  <figcaption><strong>INC on a DoTA validation video.</strong> Every tracked agent's box is coloured by its per-object score (participant solid and starred, other agents dashed); below, the frame-level scores and the participant's own score, with the annotated window shaded and the R80 threshold τ* dashed. Participant flagged before the start: the rule&#x27;s first-ranked case (Fig. 6, top). <span class="vid">pWZSG2cUdEo_003288</span></figcaption>
 </figure>
 
 <section class="lede column" aria-label="Summary">
@@ -73,7 +73,10 @@
   reading that asks how early the <em>right</em> agent was flagged all become outputs of the same model.</p>
 </section>
 
-
+<figure class="mid">
+  <div class="plate"><a class="zoom" href="static/img/fig_paradigm.svg" title="Open the figure at full size"><img src="static/img/fig_paradigm.svg" width="637" height="236" alt="Frame-level detection gives one score per frame; INC gives a score per agent per frame, so it can say which agent, where, and how early." loading="lazy"></a></div>
+  <figcaption><strong>Frame-level versus object-level incident detection.</strong> (a) The DoTA leaderboard scores one number per frame and answers one question. (b) INC scores every tracked agent at every frame; the frame score is derived from the per-object scores, so the two paradigms are comparable at frame level while only the second reports who, where and how early.</figcaption>
+</figure>
 
 <section class="block" id="glance" aria-labelledby="glance-h">
   <h2 id="glance-h">What the object pathway adds to a strong frame-level model</h2>
@@ -273,7 +276,43 @@
 
 <section class="block" id="qualitative" aria-labelledby="qualitative-h">
   <h2 id="qualitative-h">Qualitative results</h2>
-  <figure>
+  <p class="column">Each clip shows every tracked agent's box coloured by its per-object score, with the score curves of the paper's qualitative figure and a cursor at the current frame. The videos are chosen by the fixed rule of that figure from the per-video score dumps of population (a), not by hand: the best-ranked cases in which a participant is the first agent to cross τ*, within the two seconds before the annotated start, then the rule's first miss and first false alarm.</p>
+<ul class="clip-legend" aria-label="How to read the clips"><li><span class="key swatch window" aria-hidden="true"></span>annotated window</li><li><span class="key line vifm" aria-hidden="true"></span>ViFM alone</li><li><span class="key line obj" aria-hidden="true"></span>INC object pathway</li><li><span class="key line fused" aria-hidden="true"></span>fused (full system)</li><li><span class="key line part" aria-hidden="true"></span>participant</li><li><span class="key line other" aria-hidden="true"></span>two highest other agents</li><li><span class="key line tau" aria-hidden="true"></span>τ* (R80)</li><li><span class="key viridis" aria-hidden="true"></span>box colour: per-object score, low to high; participant solid and starred, other agents dashed; in crowded frames some other agents' numbers are left out, never their boxes</li></ul>
+<div class="clips">
+<figure>
+  <div class="plate"><video data-clip muted loop playsinline controls preload="metadata" width="960" height="810" poster="static/video/pWZSG2cUdEo_003288.jpg" aria-label="DoTA video pWZSG2cUdEo_003288: every tracked agent&#x27;s box coloured by its per-object score, with the score curves and a cursor at the current frame."><source src="static/video/pWZSG2cUdEo_003288.mp4" type="video/mp4"></video></div>
+  <figcaption>Participant flagged before the start: the rule&#x27;s first-ranked case (Fig. 6, top). <span class="vid">pWZSG2cUdEo_003288</span></figcaption>
+</figure>
+<figure>
+  <div class="plate"><video data-clip muted loop playsinline controls preload="metadata" width="960" height="810" poster="static/video/RASKiMoxhOE_000542.jpg" aria-label="DoTA video RASKiMoxhOE_000542: every tracked agent&#x27;s box coloured by its per-object score, with the score curves and a cursor at the current frame."><source src="static/video/RASKiMoxhOE_000542.mp4" type="video/mp4"></video></div>
+  <figcaption>Participant flagged before the start: the rule&#x27;s second-ranked case (Fig. 6, second row). <span class="vid">RASKiMoxhOE_000542</span></figcaption>
+</figure>
+<figure>
+  <div class="plate"><video data-clip muted loop playsinline controls preload="metadata" width="960" height="810" poster="static/video/eN6y6-4C1Rc_000267.jpg" aria-label="DoTA video eN6y6-4C1Rc_000267: every tracked agent&#x27;s box coloured by its per-object score, with the score curves and a cursor at the current frame."><source src="static/video/eN6y6-4C1Rc_000267.mp4" type="video/mp4"></video></div>
+  <figcaption>Participant flagged before the start: the rule&#x27;s third-ranked case. <span class="vid">eN6y6-4C1Rc_000267</span></figcaption>
+</figure>
+<figure>
+  <div class="plate"><video data-clip muted loop playsinline controls preload="metadata" width="960" height="810" poster="static/video/VxWJchENocA_000308.jpg" aria-label="DoTA video VxWJchENocA_000308: every tracked agent&#x27;s box coloured by its per-object score, with the score curves and a cursor at the current frame."><source src="static/video/VxWJchENocA_000308.mp4" type="video/mp4"></video></div>
+  <figcaption>Participant flagged before the start: the rule&#x27;s fourth-ranked case. <span class="vid">VxWJchENocA_000308</span></figcaption>
+</figure>
+<figure>
+  <div class="plate"><video data-clip muted loop playsinline controls preload="metadata" width="960" height="810" poster="static/video/OWtbKblBOKI_005256.jpg" aria-label="DoTA video OWtbKblBOKI_005256: every tracked agent&#x27;s box coloured by its per-object score, with the score curves and a cursor at the current frame."><source src="static/video/OWtbKblBOKI_005256.mp4" type="video/mp4"></video></div>
+  <figcaption>Participant flagged before the start: the rule&#x27;s fifth-ranked case. <span class="vid">OWtbKblBOKI_005256</span></figcaption>
+</figure>
+<figure>
+  <div class="plate"><video data-clip muted loop playsinline controls preload="metadata" width="960" height="810" poster="static/video/EY8x-fyQkbk_001645.jpg" aria-label="DoTA video EY8x-fyQkbk_001645: every tracked agent&#x27;s box coloured by its per-object score, with the score curves and a cursor at the current frame."><source src="static/video/EY8x-fyQkbk_001645.mp4" type="video/mp4"></video></div>
+  <figcaption>Participant flagged before the start: the rule&#x27;s sixth-ranked case. <span class="vid">EY8x-fyQkbk_001645</span></figcaption>
+</figure>
+<figure>
+  <div class="plate"><video data-clip muted loop playsinline controls preload="metadata" width="960" height="810" poster="static/video/HeK6zbf8I9Y_000313.jpg" aria-label="DoTA video HeK6zbf8I9Y_000313: every tracked agent&#x27;s box coloured by its per-object score, with the score curves and a cursor at the current frame."><source src="static/video/HeK6zbf8I9Y_000313.mp4" type="video/mp4"></video></div>
+  <figcaption>A miss: the participant never reaches τ* inside the window (Fig. 6, bottom left). <span class="vid">HeK6zbf8I9Y_000313</span></figcaption>
+</figure>
+<figure>
+  <div class="plate"><video data-clip muted loop playsinline controls preload="metadata" width="960" height="810" poster="static/video/T7TkJVmGyts_003265.jpg" aria-label="DoTA video T7TkJVmGyts_003265: every tracked agent&#x27;s box coloured by its per-object score, with the score curves and a cursor at the current frame."><source src="static/video/T7TkJVmGyts_003265.mp4" type="video/mp4"></video></div>
+  <figcaption>A false alarm: a non-participant crosses τ* before the start (Fig. 6, bottom right). <span class="vid">T7TkJVmGyts_003265</span></figcaption>
+</figure>
+</div>
+<figure>
   <div class="plate"><a class="zoom" href="static/img/fig_qualitative.jpg" title="Open the figure at full size"><img src="static/img/fig_qualitative.jpg" width="1000" height="676" alt="Two DoTA videos with per-agent boxes coloured by score and their score curves, and a miss and a false alarm." loading="lazy"></a></div>
   <figcaption><strong>Qualitative results on DoTA population (a).</strong> For each of the two videos: frames two seconds and one second before the annotated start, the start frame and a frame inside the window, with the tracked agents' boxes coloured by their per-object score (participants solid, others dashed; the participant's score is starred); below, the ViFM's frame score, the object pathway's frame score, the fused score, the participant's own score and the two highest other agents, with the annotated window shaded and the R80 threshold τ* dashed. Last row: the two failure modes isolated by the same rule, a miss (left) and a false alarm (right). The videos are chosen by a fixed rule from the per-video score dumps, not by hand.</figcaption>
 </figure>
